@@ -104,3 +104,27 @@ Atualizações com novos pushes
 Ótima ferramenta para testes e pequenos projetos
 
 
+                                        Finalização do módulo
+O que aprendemos
+Como fazer requisições com Fetch
+Noções básicas do Bootstrap
+Linhas e colunas
+Breakpoints
+Ferramentas apresentadas
+Axios
+Similar ao Fetch
+Já retorna JSON na resposta
+Permite configurações como base URL
+Fetch
+Nativo do JavaScript
+Pode ser usado no front-end e back-end
+JavaScript
+Linguagem assíncrona
+Async/await é muito útil
+Permite código assíncrono parecer síncrono
+Próximos passos
+Aplicar o aprendizado em frameworks mais modernos:
+React
+Vue
+Angular
+Aproveitar ao máximo os recursos assíncronos e síncronos do JavaScript
