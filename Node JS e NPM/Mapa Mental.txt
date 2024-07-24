@@ -1,0 +1,48 @@
+                                        NPM - Gerenciador de Pacotes do Node
+O que é
+Gerenciador de pacotes do Node.js
+Permite instalar e gerenciar bibliotecas e dependências JavaScript
+Praticamente todas as bibliotecas JS estão disponíveis no NPM
+Por que é importante
+Aplicações web são complexas e dependem de muitos pacotes
+Facilita a reutilização de código já desenvolvido por outros
+Otimiza e agiliza o desenvolvimento
+O que você vai aprender
+Diferença entre dependência, pacote, biblioteca e framework
+Como instalar e utilizar pacotes com NPM
+Conhecer o ReactJS
+Ler e entender documentações
+Pré-requisitos
+Terminal
+Node.js (já vem com o NPM)
+VS Code
+Conteúdos que serão aprofundados depois
+ReactJS
+Express
+
+
+                                        Tema central: Pacotes, dependências, frameworks e bibliotecas
+Pacotes
+Nome genérico para qualquer código de terceiro que possa ser reutilizado
+Forma de organizar arquivos, código-fonte e outras informações
+Exemplos: React, Angular
+Dependências
+Aplicação de uma biblioteca, framework ou pacote em um projeto
+O projeto passa a depender das funcionalidades desse código externo
+Bibliotecas
+Conjuntos de classes, funções e métodos para realizar certas tarefas
+Projetadas para resolver problemas específicos e acelerar o desenvolvimento
+Exemplos: React, Bootstrap
+Frameworks
+Conjuntos de bibliotecas
+Fornecem uma base sólida para o desenvolvimento de aplicativos
+Abordam várias partes do projeto (front-end, back-end, banco de dados)
+Exemplos: Angular, Express
+Vantagens
+Reutilização de código
+Aceleração no desenvolvimento
+Melhoria na qualidade e padronização
+Suporte da comunidade
+Aplicação
+Gerenciados pelo NPM (Node Package Manager)
+Permite gerenciar versões e dependências
