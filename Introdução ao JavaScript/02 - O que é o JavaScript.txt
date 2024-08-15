@@ -1,0 +1,15 @@
+JavaScript
+É uma linguagem de programação dinâmica, de baixa tipagem que é compilada em tempo de execução. Pode ser executado como parte de um site em um navegador ou diretamente na máquina (ambiente de servidor).
+JavaScript é uma linguagem de programação extremamente versátil e amplamente utilizada para adicionar interatividade e dinamismo a páginas web. Criada em 1995 por Brendan Eich, ela se tornou uma parte essencial do desenvolvimento web moderno.
+
+Características do JavaScript:
+Interatividade: Permite criar elementos interativos em páginas web, como sliders, formulários dinâmicos e animações.
+Execução no Navegador: Originalmente, o JavaScript é executado no lado do cliente, ou seja, no navegador do usuário, permitindo manipular o DOM (Document Object Model) e alterar o conteúdo da página sem precisar recarregá-la.
+Multiparadigma: Suporta programação procedural, orientada a objetos e funcional.
+Dinamicamente Tipada: As variáveis não têm um tipo fixo, o que proporciona flexibilidade no desenvolvimento.
+Comunidade e Ecossistema: Possui uma vasta comunidade e um ecossistema rico em bibliotecas e frameworks, como React, Angular e Node.js.
+Aplicações:
+Desenvolvimento Web: Usado para criar sites e aplicações web interativas.
+Desenvolvimento de Servidores: Com o Node.js, o JavaScript também pode ser usado no backend, permitindo o desenvolvimento full-stack com uma única linguagem.
+Aplicações Móveis e Desktop: Com frameworks como React Native e Electron, é possível desenvolver aplicativos móveis e de desktop.
+JavaScript é uma linguagem essencial para qualquer desenvolvedor web, e seu domínio é fundamental para criar experiências de usuário ricas e dinâmicas.
