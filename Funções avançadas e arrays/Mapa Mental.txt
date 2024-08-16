@@ -1,0 +1,51 @@
+                                        Resumo detalhado do vídeo
+Tema central: Funções em JavaScript
+Sintaxe de uma função
+Palavra reservada function
+Nome da função
+Parâmetros (declaração) vs. Argumentos (chamada)
+Parâmetros: variáveis declaradas dentro dos parênteses da função
+Argumentos: valores passados quando a função é chamada
+Projeto: Contador regressivo
+Objetivo: criar um contador regressivo que exiba o tempo restante
+Utilizar a função setInterval()
+Recebe uma função e um intervalo de tempo (em milissegundos)
+Executa a função a cada intervalo de tempo
+Implementação
+Declarar uma variável segundosRestantes com o tempo inicial
+Decrementar segundosRestantes a cada execução do setInterval()
+Exibir o valor de segundosRestantes
+Usar clearInterval() quando segundosRestantes chegar a 0 para parar a execução
+Conceitos adicionais
+Converter tempo de segundos para milissegundos
+Criar uma função getTimeMilliseconds()
+Evitar que o contador exiba valores negativos
+Usar if (segundosRestantes === 0) para limpar o intervalo
+Próximos tópicos
+Funções de seta (arrow functions)
+Conceitos e aplicação prática
+
+
+                                        Callbacks em JavaScript
+O que são callbacks?
+Funções passadas como argumentos para outras funções
+Úteis para executar código após eventos assíncronos
+Vantagens de usar callbacks
+Executar código após eventos assíncronos
+Não sabemos exatamente quando o evento vai terminar
+Callbacks permitem executar código quando o evento acabar
+Modularidade e reutilização de código
+Dividir o código em partes menores e reutilizáveis
+Melhora a legibilidade e manutenção do código
+Exemplo: Contador regressivo
+Iniciar o contador regressivo
+Recebe uma função callback como argumento
+Atualizar o contador regressivo
+Executa a função callback quando o contador chega a zero
+Conclusão
+Callbacks são funções fundamentais em JavaScript
+Permitem executar código após eventos assíncronos
+Melhoram a modularidade e reutilização do código
+Conceito importante para entender programação assíncrona em JavaScript
+
+
