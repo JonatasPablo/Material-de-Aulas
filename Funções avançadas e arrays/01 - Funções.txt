@@ -5,4 +5,3 @@ Legibilidade.
 Exercícios:
 1 - Criar uma função que soma dois valores
 2 - Criar uma função que verifica se o número é par
-teste 321
