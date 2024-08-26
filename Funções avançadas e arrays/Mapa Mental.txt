@@ -166,3 +166,67 @@ O Find é diferente do Filter, que retorna uma lista de todos os itens que satis
 O Destructuring é uma técnica poderosa para simplificar o acesso a propriedades de objetos e arrays
 
 
+                                        Revisão de Funções e Arrays
+Introdução
+Parabéns por concluir o módulo de funções e arrays
+Módulo extenso, com muito conteúdo novo e importante para o desenvolvimento como desenvolvedor
+Revisão do Conteúdo
+Funções
+Sintaxe de funções
+Arrow functions
+Callbacks
+setInterval e clearInterval
+Arrays
+Manipulação de arrays
+Adição e remoção de elementos (início e fim)
+Métodos mutáveis vs imutáveis
+Métodos de array avançados
+map, filter, reduce, find
+some e every
+Ordenação de arrays (sort)
+Encadeamento de métodos de array
+Exercício Proposto
+Criar uma lista de tarefas
+Cada tarefa representada por um objeto com propriedades: descrição, prioridade e status
+Prioridade de 1 a 3 (3 sendo a mais baixa)
+Status: "pendente" ou "concluída"
+Manipulação da lista de tarefas
+Adicionar novas tarefas (método push)
+Remover tarefas concluídas (método filter)
+Marcar tarefas como concluídas
+Ordenar tarefas por prioridade (método sort)
+Contar tarefas pendentes (método reduce)
+Encontrar uma tarefa específica (método find)
+Verificar se todas as tarefas estão concluídas (método every)
+Conclusão
+Exercício para consolidar o aprendizado de funções avançadas e arrays
+Na próxima aula, será resolvido o exercício juntos
+Importante organizar e praticar o conteúdo aprendido
+
+
+                                        Criação e Manipulação de Listas de Tarefas
+Criar Lista de Tarefas
+Criar um array com objetos
+Cada objeto possui:
+Descrição da tarefa
+Prioridade (1, 2, 3)
+Status (concluída, pendente)
+Adicionar Novas Tarefas
+Utilizar o método push() para adicionar novos objetos à lista
+Remover Tarefas Concluídas
+Utilizar o método filter() para criar uma nova lista com apenas as tarefas pendentes
+Marcar Tarefas como Concluídas
+Utilizar o método map() para atualizar o status das tarefas
+Ordenar Tarefas por Prioridade
+Utilizar o método sort() para ordenar a lista de tarefas por prioridade
+Contar Tarefas Pendentes
+Utilizar o método reduce() para contar o número de tarefas pendentes
+Encontrar Tarefa Específica
+Utilizar o método find() para localizar uma tarefa com uma descrição específica
+Verificar se Todas as Tarefas Estão Concluídas
+Utilizar o método every() para verificar se todas as tarefas estão com status "concluída"
+Conclusão
+Exercício abordou diversos tópicos sobre manipulação de arrays e funções
+Importante fixar o conhecimento adquirido para o desenvolvimento como programador
+
+

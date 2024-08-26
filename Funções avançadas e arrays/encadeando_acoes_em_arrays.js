@@ -12,7 +12,6 @@ console.log(armarioOrdenado);
 
 let fraseInicial = 'As gavetas que possuem pelo menos 3 itens dentro são: ';
 
-// foi utilizado vários métodos de uma vez sem precisar ficar alocando memória desnecessária.
 const armarioSorteado = 
     armario
         .sort((gavetaUm, gavetaDois) => {return gavetaDois.itens.length - gavetaUm.itens.length})
