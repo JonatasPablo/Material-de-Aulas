@@ -1,0 +1,30 @@
+Mestre Jonatas, aqui está a definição de código síncrono e assíncrono em JavaScript:
+
+1. **Código Síncrono**:  
+   No JavaScript, o código síncrono é executado linha por linha, de cima para baixo. Cada linha de código é executada apenas após a conclusão da linha anterior. Isso significa que, se uma linha de código estiver realizando uma tarefa demorada (como uma operação de leitura de arquivo ou de rede), as linhas seguintes não serão executadas até que essa tarefa seja concluída. Por exemplo:
+
+   ```javascript
+   console.log('Início');
+   // Simula uma tarefa demorada
+   for (let i = 0; i < 1e9; i++) {}
+   console.log('Fim');
+   ```
+
+   Neste caso, a linha "Fim" só será exibida após a conclusão do loop, o que pode causar travamentos se o código demorar muito para executar.
+
+2. **Código Assíncrono**:  
+   O código assíncrono permite que operações de longa duração sejam realizadas em segundo plano, permitindo que outras partes do código sejam executadas simultaneamente. Isso melhora a eficiência, especialmente para tarefas que envolvem operações de I/O, como requisições de rede ou leitura de arquivos. JavaScript usa funções de callback, Promises e `async/await` para lidar com operações assíncronas. Por exemplo:
+
+   ```javascript
+   console.log('Início');
+
+   setTimeout(() => {
+     console.log('Tarefa Assíncrona');
+   }, 2000);
+
+   console.log('Fim');
+   ```
+
+   Aqui, "Fim" será impresso antes de "Tarefa Assíncrona", mesmo que a função `setTimeout` seja definida antes, porque `setTimeout` é uma operação assíncrona que é executada em segundo plano enquanto o resto do código continua sendo executado.
+
+Em resumo, **código síncrono** é executado em sequência, bloqueando a execução das próximas instruções até que a atual seja concluída, enquanto **código assíncrono** permite que outras partes do código sejam executadas enquanto operações demoradas são processadas em segundo plano.

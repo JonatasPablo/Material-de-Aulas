@@ -1,0 +1,61 @@
+Entendendo Promises e Encadeamento em JavaScript
+Introdução
+As Promises são um conceito fundamental na programação assíncrona em JavaScript. Este ebook explora em detalhes o que são Promises, como funcionam e como podemos utilizá-las de forma encadeada para lidar com operações assíncronas complexas. Vamos abordar desde conceitos básicos até exemplos práticos de uso.
+
+O que são Promises
+As Promises em JavaScript representam um valor que pode não estar disponível imediatamente, mas será resolvido em algum momento futuro. Elas são especialmente úteis para lidar com operações assíncronas.
+
+Conceito básico
+Uma Promise pode ser entendida como uma promessa de que algo será feito. Enquanto essa promessa está sendo cumprida, o código continua executando outras tarefas.
+
+Estados de uma Promise
+Uma Promise pode estar em um dos três estados:
+
+Pending: Estado inicial, a Promise ainda está em execução
+Fulfilled: A operação foi concluída com sucesso
+Rejected: A operação falhou
+Analogia prática
+Pedir a um amigo para comprar algo enquanto você continua fazendo outras tarefas é uma boa analogia para entender Promises:1. Você faz o pedido (cria a Promise)2. Seu amigo vai comprar (Promise em execução)3. Você continua suas atividades (código continua executando)4. Seu amigo retorna com o item (Promise resolvida)
+Encadeamento de Promises
+O encadeamento de Promises é uma técnica poderosa que permite executar operações assíncronas em sequência, onde cada operação depende do resultado da anterior.
+
+Conceito de encadeamento
+Permite executar várias operações assíncronas em sequência
+Cada Promise na cadeia depende do resultado da Promise anterior
+Evita o "callback hell", tornando o código mais legível e manutenível
+Exemplo prático: Login e busca de dados
+Um cenário comum de encadeamento de Promises é o processo de login e busca de dados em uma rede social:
+
+Autenticação do usuário
+Busca de dados do perfil
+Busca de posts recentes
+Cada etapa depende do sucesso da anterior para prosseguir.
+
+Sintaxe básica
+primeiraPromise()  .then(resultado => {    return segundaPromise(resultado);  })  .then(resultado2 => {    console.log(resultado2);  })  .catch(erro => {    console.error(erro);  });
+Implementação Prática
+Vamos implementar um exemplo prático de encadeamento de Promises simulando o processo de login e busca de fotos no Instagram.
+
+Autenticação no Instagram
+function autenticarInstagram() {  return new Promise((resolve, reject) => {    console.log("Iniciando autenticação do usuário");    setTimeout(() => {      const sucesso = true;      if (sucesso) {        resolve({          username: "fulano_de_tal",          following: ["user1", "user2", "user3"]        });      } else {        reject("Erro na autenticação");      }    }, 3000);  });}
+Busca de fotos recentes
+function buscarFotosRecentes(seguindo) {  return new Promise((resolve, reject) => {    console.log("Iniciando busca das fotos recentes");    setTimeout(() => {      const sucesso = true;      if (sucesso) {        resolve([          "foto_user1.jpg",          "foto_user2.jpg",          "foto_user3.jpg"        ]);      } else {        reject("Erro ao buscar fotos recentes");      }    }, 2000);  });}
+Encadeamento das operações
+autenticarInstagram()  .then(resposta => {    console.log("Autenticação bem-sucedida:", resposta);    return buscarFotosRecentes(resposta.following);  })  .then(fotosRecentes => {    console.log("Fotos recentes:", fotosRecentes);  })  .catch(erro => {    console.error("Ocorreu um erro:", erro);  });
+Exercício Prático
+Para consolidar o aprendizado, vamos propor um exercício prático simulando um processo de encomenda em uma loja online.
+
+Objetivo
+Criar um sistema de encadeamento de Promises que simule:
+
+Realização do pedido
+Processamento do pagamento
+Confirmação do envio
+Estrutura sugerida
+function realizarPedido() {  // Implementar lógica do pedido}function processarPagamento() {  // Implementar lógica do pagamento}function confirmarEnvio() {  // Implementar lógica de confirmação de envio}realizarPedido()  .then(() => processarPagamento())  .then(() => confirmarEnvio())  .then(() => console.log("Pedido finalizado com sucesso!"))  .catch(erro => console.error("Erro no processo:", erro));
+Conclusão
+O encadeamento de Promises é uma técnica poderosa para lidar com operações assíncronas complexas em JavaScript. Através dos exemplos e exercícios apresentados, pudemos ver como essa abordagem torna o código mais legível e fácil de manter, evitando o temido "callback hell".
+
+Dominar o uso de Promises e seu encadeamento é essencial para desenvolvedores JavaScript, especialmente ao lidar com operações como requisições de API, acesso a banco de dados e outras tarefas assíncronas comuns no desenvolvimento web moderno.
+
+Pratique os conceitos apresentados, implemente o exercício proposto e continue explorando as possibilidades oferecidas pelas Promises em seus projetos JavaScript.
