@@ -1,0 +1,33 @@
+                                        Possibilidades de Desenvolvimento Web
+Elementos Principais
+Sites
+Exemplo: Site da ADNC
+Navegação (cursos, mentoring, blog, login, criar conta)
+URL no canto inferior esquerdo
+Landing Pages
+Mesmo mecanismo de funcionamento que os sites
+Inspeção da página no navegador
+Plataformas
+Exemplo: Plataforma do Aluno
+Mesmo mecanismo de funcionamento que os sites e landing pages
+Acesso via domínio e IP do servidor
+Possibilidade de respostas 200 (OK) ou 401 (Não Autorizado)
+Integração e Automação
+Necessidade de programação
+Mesmo mecanismo de envio de requisição e recebimento de resposta
+Manipulação da resposta recebida
+Servidores de Comunicação
+Aplicações de suporte, chat, Zendesk, WhatsApp
+Diferente das aplicações web tradicionais
+Desafios
+Complexidade
+Variação da complexidade de acordo com o projeto
+Estratégias de simplificação (divisão e conquista, programação dinâmica)
+Tempo
+Necessidade de alinhamento entre as partes sobre prazos e soluções rápidas
+Custo Elevado
+Desafio de Pessoas
+Importância das soft skills (comunicação, trabalho em equipe)
+Diferença entre profissional bom e excepcional
+
+
