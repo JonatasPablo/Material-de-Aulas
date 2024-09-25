@@ -1,31 +1,17 @@
-console.log('Fazer autenticação no instagram e buscar fotos recentes dos meus seguidores');
+console.log('Buscar dados em um servidor.');
 
-let autenticacaoInstagram = new Promise((resolve, reject) => {
-    console.log('Início de autenticação do usuário')
+let promessaDeBusca = new Promise((resolve, reject) => {
+    console.log('Iniciando busca de dados no servidor... ')
 
-    setTimeout(() => {
+    setTimeout(()=>{
         let sucesso = true;
-        if(sucesso) resolve ({username: 'Teste', following: [{user: 1}, {user: 2}, {user: 3}]})
-        else reject('Ocorreu um erro na autenticação')
-    },3000)
+        if(sucesso) resolve({name: 'Jonatas', age: 29})
+        else reject('Opa, aconteceu um erro no servidor, dados não encontrados.')
+    },5000)
 })
 
-let buscaDasFotosSeguindo = (quemEuSigo) => new Promise((resolve, reject) => {
-    console.log('Iniciando busca das fotos recentes de quem eu sigo')
+console.log('Vida que segue, estou fazendo outras coisas no codigo enquanto executa a busca.')
 
-    setTimeout(() => {
-        let sucesso = true;
-        if(sucesso) resolve([{foto: 'src1', user: 1}, {foto: 'src2', user: 2}, {foto: 'src3', user: 3}])
-        else reject('Ocorreu um erro ao buscar uma foto recente de quem eu sigo.')
-    },3000)
-})
-
-autenticacaoInstagram
-    .then((resposta) => {
-        return buscaDasFotosSeguindo(resposta)
-    })
-    .then((respostaFotosRecentes) => {
-        console.log(respostaFotosRecentes)
-    })
-    
-
+promessaDeBusca
+    .then(console.log)
+    .catch(console.log)
