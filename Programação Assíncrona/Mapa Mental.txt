@@ -112,3 +112,75 @@ O exercício foi resolvido com sucesso
 Importante entender o conceito de sincronicidade do código
 
 
+                                        Gerenciamento de Erros com Promises
+Introdução
+Entendendo o que são Promises
+Encadeamento de Promises
+Importância do gerenciamento de erros
+Tratamento de Erros em Promises
+Analogia: Amigo indo comprar algo na loja
+Promises podem retornar erros durante a execução
+Necessidade de estar preparado para lidar com esses erros
+Sintaxe de Tratamento de Erros
+Utilizando o método catch()
+Estrutura básica: promise.then().catch()
+Exemplo prático: Busca de dados no servidor
+Lidando com Erros na Prática
+Exemplo: Erro na busca de dados
+Executando a promessa novamente no catch()
+Outras possíveis ações: Exibir mensagem de erro, tentar mais tarde, etc.
+Exercício Prático
+Implementar o tratamento de erros nos casos:
+Confirmação de pedido
+Promessa de pagamento
+Objetivo: Exibir log de erro, sem tentar novamente
+Conclusão
+Importância do gerenciamento de erros em Promises
+Revisitar aulas e praticar para melhor entendimento
+Continuar aplicando os conceitos aprendidos
+
+
+                                        Async Await: A Forma Mais Bonita de Lidar com Código Assíncrono em JavaScript
+Introdução
+Promises: Conceitos importantes aprendidos anteriormente
+Async Await: Forma mais comum de lidar com código assíncrono no JavaScript moderno
+Analogia: Pedindo um Favor a um Amigo
+Amigo precisa fazer algo para você
+Você espera enquanto ele faz
+Async Await é uma forma de escrever essa mesma lógica
+Sintaxe do Async Await
+Função marcada como async sempre retorna uma Promise
+await faz com que a função espere pela resolução de uma Promise
+Exemplo 1: Confirmação de Pedido
+Função confirmarPedido() retorna uma Promise
+Uso do await para esperar a resolução da Promise
+Exemplo 2: Busca de Dados no Servidor
+Função buscarDadosNoServidor() retorna uma Promise
+Uso do await para esperar a resolução da Promise
+Código parece síncrono, mas espera pelas operações assíncronas
+Exercício Proposto
+Refatorar o fluxo de processo de pagamento online usando Async Await
+Conclusão
+Async Await torna o código mais fácil de ler e mais conciso
+Mesma funcionalidade com muito menos código
+
+
+                                        Transformando Promessas em Código Assíncrono
+Confirmação de Pedido
+A primeira etapa é transformar a promessa de "pedido confirmado" em uma função assíncrona chamada "confirmar pedido".
+Essa função retorna uma nova promessa.
+Processamento de Pagamento
+A próxima etapa é processar o pagamento.
+O processamento de pagamento também é uma função assíncrona.
+Primeiro, é necessário aguardar a aprovação do pagamento antes de mostrar se o pagamento foi aprovado ou ocorreu um erro.
+Código Final
+Agora, o código final é composto por duas etapas:
+Confirmar o pedido usando a função "confirmar pedido".
+Processar o pagamento usando a função "processar pagamento".
+Caso tudo dê certo, será exibida a mensagem "Tudo deu certo no seu pedido, aguardando envio".
+Vantagens do Uso de Async/Await
+Ao usar async/await, o código fica muito mais legível e fácil de entender.
+Não é mais necessário usar os métodos .then() e .catch() para lidar com promessas.
+O fluxo do código fica muito mais claro e linear.
+
+
