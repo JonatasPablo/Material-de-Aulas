@@ -184,3 +184,29 @@ Não é mais necessário usar os métodos .then() e .catch() para lidar com prom
 O fluxo do código fica muito mais claro e linear.
 
 
+                                        Tratamento de Erros com Sync Await
+Introdução
+Conteúdo denso, mas explicado de forma clara e didática
+Objetivo: entender como tratar erros em código assíncrono usando Sync Await
+Revisitando Promises
+Uso do .then() para lidar com sucesso
+Uso do .catch() para lidar com erros
+Sync Await vs Promises
+Sync Await retorna uma Promise
+Necessidade de tratar erros, pois a Promise pode ser rejeitada
+Try/Catch
+Sintaxe similar ao .then() e .catch()
+Tenta executar um bloco de código
+Caso ocorra um erro, captura e trata o erro no bloco catch
+Exemplo Prático
+Cenário: pedido online com pagamento não aprovado
+Sem tratamento de erros: fluxo quebra, não é possível entender o que aconteceu
+Com Try/Catch:
+Inicia o pedido online
+Confirma o pedido com sucesso
+Aguarda o pagamento ser aprovado
+Caso ocorra um erro no pagamento, trata o erro e cancela o pedido
+Conclusão
+Try/Catch é uma forma de gerenciar erros em código assíncrono, similar ao .then() e .catch()
+Permite tratar erros de forma síncrona, facilitando a leitura e compreensão do código
+Importante sempre adicionar tratamento de erros em código assíncrono

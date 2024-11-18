@@ -220,3 +220,72 @@
     // console.log(data);
 
     /*Vídeo aula nº215 Exercício prático Async e Await*/
+
+    /*Exercício: Escrever um código que simula um processo de encomenda.
+    - Fazer com Async / Await e try/catch
+    - Primeiro, fazemos o pedido
+    - Se o pedido for confirmado (promise der sucesso)
+    - Retornar uma nova promise para fazer o pagamento.
+    - Caso pagamento com sucesso, logar "Pedido Pago! Aguardando envio" */
+    // console.log('Fazendo o pedido');
+    // let fazendoPedido = async () => new Promise((resolve, reject) => {
+    //     console.log('Início do pedido');
+    //     setTimeout(() => {
+    //         let sucesso = false;
+    //         if(sucesso) resolve('Pedido confirmado com sucesso')
+    //         else reject('Falha ao concluir o pedido, reveja o pedido e tente novamente.')
+    //     }, 3000);
+    // })
+    // let fazendoPagamento = async (aguardarPagamento) => new Promise((resolve, reject) => {
+    //     console.log('Início do pagamento')/
+    //     setTimeout(() => {
+    //         let sucesso = true;
+    //         if(sucesso) resolve('Pedido pago! Aguardando envio.')
+    //         else reject('Pagamento não aprovado, verifique as formas de pagamento e tente novamente.')
+    //     }, 3000);
+    // })
+    // try{
+    //     const pedidoConfirmado = await fazendoPedido();
+    // const pagamentoAprovado = await fazendoPagamento(pedidoConfirmado);
+    // console.log('Tudo deu certo no seu pedido, aguardando envio!');
+    // }catch(error){
+    //     console.log(error);
+    // }
+
+
+    /*Teste sozinho*/
+    // console.log('Rafaela está fazendo o jantar');
+    // let pedidoDeJanta = async = () => new Promise((resolve, reject) => {
+    //     console.log('Início dos preparos');
+    //     setTimeout(() => {
+    //         let sucesso = true;
+    //         if(sucesso){
+    //             console.log('Deu certo o preparo');
+    //             resolve();
+    //         }else{
+    //             console.log('Rafaela: Acabou o gás, você vai jejuar pela sua vida!');
+    //             reject();
+    //         } 
+    //     }, 3000);
+    // })
+    // let jantando = async = () => new Promise((resolve, reject) => {
+    //     console.log('Começar a comer');
+    //     setTimeout(() => {
+    //         let sucesso = true;
+    //         if(sucesso){
+    //             console.log('Comi tudo, estou satisfeito');
+    //             resolve();
+    //         }else{
+    //             console.log('Noss... achei um cabelo, não vou comer mais!');
+    //             reject();
+    //         }
+    //     }, 6000);
+    // })
+    // try {
+    //     const jantaPronta = await pedidoDeJanta();
+    //     const acabeiDeJantar = await jantando(jantaPronta);
+    //     console.log('Jantar encerrado');
+    // }catch(error){
+    //     console.log('Jantar encerrado');
+    // }
+
